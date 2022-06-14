@@ -150,3 +150,24 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
   padding-right: var(--wp--custom--spacing--outer);
   padding-left: var(--wp--custom--spacing--outer);
 }
+
+/* backgrounds */
+.red-bg {
+  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Red-Topo.jpg");
+  background-size: 100%;
+}
+
+.white-bg {
+  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Beige-Topo.jpg");
+  background-size: 100%;
+}
+
+.black-bg {
+  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Black-Topo.jpg");
+  background-size: 100%;
+}
+
+.blue-bg {
+  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Blue-Topo.jpg");
+  background-size: 100%;
+}
