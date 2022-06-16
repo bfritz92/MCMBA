@@ -173,19 +173,19 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 }
 
 /* Trail conditions */
-ul.trail-conditions{
+ul.trail-conditions {
   list-style: none;
   padding-left: 0;
 }
-ul.trail-conditions li{
-  display:flex;
+ul.trail-conditions li {
+  display: flex;
 }
-ul.trail-conditions li div{
-  width:20px;
+ul.trail-conditions li div {
+  width: 20px;
 }
 ul.trail-conditions li h4 {
-  color:#fff;
-  margin:0;
+  color: #fff;
+  margin: 0;
 }
 
 /* utilities */
