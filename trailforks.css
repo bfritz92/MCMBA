@@ -2,3 +2,9 @@
 body{
     font-family:'roboto-condensed', sans-serif;
 }
+
+#regionInfo .box1{background-color:transparent;}
+
+label{font-weight:700; 
+    text-transform: uppercase;
+color:#fff;}
