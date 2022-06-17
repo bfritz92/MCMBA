@@ -3,8 +3,8 @@ body{
     font-family:'roboto-condensed', sans-serif;
 }
 
-#regionInfo .box1{background-color:transparent;}
+#regionInfo .box1{background-color:transparent; border:none;}
 
-label{font-weight:700; 
+#regionInfo label, b{font-weight:700; 
     text-transform: uppercase;
 color:#fff;}
