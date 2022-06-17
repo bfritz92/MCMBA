@@ -155,21 +155,25 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 .red-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Red-Topo.jpg");
   background-size: 1000px;
+  background-position:0%, 0%;
 }
 
 .white-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Beige-Topo.jpg");
   background-size: 1000px;
+  background-position: 0%, 0%;
 }
 
 .black-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Black-Topo.jpg");
   background-size: 1000px;
+  background-position: 0%, 0%;
 }
 
 .blue-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Blue-Topo.jpg");
   background-size: 1000px;
+  background-position: 0%, 0%;
 }
 
 /* Trail conditions */
