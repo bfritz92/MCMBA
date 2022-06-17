@@ -11,10 +11,10 @@ body{
 color:#fff;}
 
 /* trail conditions widget */
-ul#trailstatus li.status a span.sicon_small{
+#trailstatus li.status a span.sicon_small{
     font-size:150%;
 }
 
-ul#trailstatus li.status a span.sgreen{
+#trailstatus li.status a span.sgreen{
     color: #4BB457;
 }
