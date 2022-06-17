@@ -3,8 +3,18 @@ body{
     font-family:'roboto-condensed', sans-serif;
 }
 
+/* Region Info widget */
 #regionInfo .box1{background-color:transparent; border:0;}
 
 #regionInfo label, b{font-weight:700; 
     text-transform: uppercase;
 color:#fff;}
+
+/* trail conditions widget */
+ul#trailstatus li.status a span.sicon_small{
+    font-size:150%;
+}
+
+ul#trailstatus li.status a span.sgreen{
+    color: #4BB457;
+}
