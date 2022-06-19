@@ -107,7 +107,7 @@
         },
         {
           "slug": "background",
-          "color": "#FAF7F2",
+          "color": "#FFFFFF",
           "name": "Background"
         },
         {
@@ -205,7 +205,7 @@
       },
       "core/post-title": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--lora)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontWeight": "300",
           "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
           "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
@@ -336,3 +336,4 @@
     }
   ]
 }
+
