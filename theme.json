@@ -308,7 +308,7 @@
       "blockGap": "1.5rem"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--roboto-condensed)",
+      "fontFamily": "var(--wp--preset--font-family--lora)",
       "lineHeight": "var(--wp--custom--typography--line-height--normal)",
       "fontSize": "var(--wp--preset--font-size--medium)"
     }
