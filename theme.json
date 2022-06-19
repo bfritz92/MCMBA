@@ -107,7 +107,7 @@
         },
         {
           "slug": "background",
-          "color": "#FFFFFF",
+          "color": "#FAF7F2",
           "name": "Background"
         },
         {
@@ -205,7 +205,7 @@
       },
       "core/post-title": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--roboto)",
+          "fontFamily": "var(--wp--preset--font-family--lora)",
           "fontWeight": "300",
           "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
           "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
@@ -298,14 +298,6 @@
           "fontSize": "var(--wp--preset--font-size--medium)"
         }
       },
-      "p": {
-        "typography": {
-          "fontFamily": "var(--wp--preset--font-family--lora)",
-          "fontWeight": "400",
-          "lineHeight": "var(--wp--custom--typography--line-height--normal)",
-          "fontSize": "var(--wp--preset--font-size--small)"
-      
-      },
       "link": {
         "color": {
           "text": "var(--wp--preset--color--foreground)"
@@ -343,5 +335,4 @@
       "area": "footer"
     }
   ]
-  }
 }
