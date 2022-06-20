@@ -203,3 +203,8 @@ ul.trail-conditions li h4 {
   margin-bottom: 0;
   margin-block-start: 0 !important;
 }
+
+/* Specific Fixes */
+.wp-block-template-part{
+  margin-block-start:0 !important;
+}
