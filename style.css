@@ -215,8 +215,7 @@ ul.trail-conditions li h4 {
 }
 
 @media only screen and (min-width: 900px){
-  .trail-cover--info{
-    min-width: 800px;
+  .trail--cover--info{
     max-width: 1000px;
   }
 }
