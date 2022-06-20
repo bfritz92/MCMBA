@@ -151,6 +151,11 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
   padding-left: var(--wp--custom--spacing--outer);
 }
 
+/* Typography */
+.entry-content.wp-block-post-content{
+  font-family: 'Lora', serif;
+}
+
 /* backgrounds */
 .red-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Red-Topo.jpg");
