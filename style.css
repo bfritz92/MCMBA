@@ -220,3 +220,10 @@ ul.trail-conditions li h4 {
     max-width: 1000px;
   }
 }
+
+/* Facebook Embed things */
+.tagembed-container{
+  max-width:960px;
+  margin-right:auto;
+  margin-left:auto;
+}
