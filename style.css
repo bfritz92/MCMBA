@@ -163,9 +163,19 @@ ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-n
   color: white;
   padding: 20px 30px;
 }
+.custom-logo{
+  margin: 10px auto;
+}
 .entry-content{
   margin-block-start:0;
 }
+@media only screen and (min-width:767px){
+  .top-nav {
+    transform:translateX(calc(1 * var(--wp--custom--spacing--outer)) !important;)
+  }
+}
+
+
 /* backgrounds */
 .red-bg {
   background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Red-Topo.jpg");
