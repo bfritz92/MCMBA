@@ -178,13 +178,13 @@ ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-n
 
 /* backgrounds */
 .red-bg {
-  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Red-Topo.jpg");
+  background-image: url("/wp-content/uploads/2022/06/Red-Topo.jpg");
   background-size: 1000px;
   background-position:0%, 0%;
 }
 
 .white-bg {
-  background-image: url("https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/Beige-Topo.jpg");
+  background-image: url("/wp-content/uploads/2022/06/Beige-Topo.jpg");
   background-size: 1000px;
   background-position: 0%, 0%;
 }
