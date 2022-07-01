@@ -158,6 +158,11 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-navigation-link a.wp-block-navigation-item__content span.wp-block-navigation-item__label{
   font-size: var(--wp--preset--font-size--small) !important;
 }
+#modal-2-content ul.wp-block-navigation__container li:last-child a{
+  background-color: var(--wp--preset--color--primary);
+  color: white;
+  padding: 20px 30px;
+}
 
 /* backgrounds */
 .red-bg {
