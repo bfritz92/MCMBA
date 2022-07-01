@@ -193,6 +193,7 @@ ul.trail-conditions li div {
 ul.trail-conditions li h4 {
   color: #fff;
   margin: 0;
+  padding-left:5px;
 }
 
 /* utilities */
