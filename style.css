@@ -171,7 +171,7 @@ ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-n
 }
 @media only screen and (min-width:767px){
   .top-nav {
-    transform:translateX(calc(1 * var(--wp--custom--spacing--outer)) !important;)
+    transform:translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
   }
 }
 
