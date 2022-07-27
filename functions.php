@@ -105,4 +105,4 @@ function wpb_list_child_pages() {
 	 
 	}
 	 
-	add_shortcode('list_childpages', 'wpb_list_child_pages');
+	add_shortcode('wpb_childpages', 'wpb_list_child_pages');
