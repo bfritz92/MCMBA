@@ -232,7 +232,6 @@ ul.trail-conditions li h4 {
 }
 .childpages li a {
   display: flex;
-  flex-direction: column-reverse;
 }
 
 .childpages li a h4 {
