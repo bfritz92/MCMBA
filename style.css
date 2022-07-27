@@ -153,34 +153,37 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 /* Typography */
 
-
 /* Menu */
-ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-navigation-link a.wp-block-navigation-item__content span.wp-block-navigation-item__label{
+ul.wp-block-navigation__submenu-container
+  li.wp-block-navigation-item.wp-block-navigation-link
+  a.wp-block-navigation-item__content
+  span.wp-block-navigation-item__label {
   font-size: var(--wp--preset--font-size--small) !important;
 }
-#modal-2-content ul.wp-block-navigation__container li:last-child a{
+#modal-2-content ul.wp-block-navigation__container li:last-child a {
   background-color: var(--wp--preset--color--primary);
   color: white;
   padding: 20px 30px;
 }
-.custom-logo{
+.custom-logo {
   margin: 10px auto;
 }
-.entry-content{
-  margin-block-start:0;
+.entry-content {
+  margin-block-start: 0;
 }
-@media only screen and (min-width:767px){
+@media only screen and (min-width: 767px) {
   .top-nav {
-    transform:translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
+    transform: translateX(
+      calc(1 * var(--wp--custom--spacing--outer))
+    ) !important;
   }
 }
-
 
 /* backgrounds */
 .red-bg {
   background-image: url("/wp-content/uploads/2022/06/Red-Topo.jpg");
   background-size: 1000px;
-  background-position:0%, 0%;
+  background-position: 0%, 0%;
 }
 
 .white-bg {
@@ -215,7 +218,31 @@ ul.trail-conditions li div {
 ul.trail-conditions li h4 {
   color: #fff;
   margin: 0;
-  padding-left:5px;
+  padding-left: 5px;
+}
+
+/* child page list */
+.childpages {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding-left: 0;
+}
+.childpages li a {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.childpages li a h4 {
+  font-size: var(--wp--preset--font-size--medium) !important;
+}
+
+.childpages li a img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: 100%;
 }
 
 /* utilities */
@@ -226,27 +253,27 @@ ul.trail-conditions li h4 {
 }
 
 /* Specific Fixes */
-.wp-block-template-part{
-  margin-block-start:0 !important;
+.wp-block-template-part {
+  margin-block-start: 0 !important;
 }
 
-.trail--cover{
-  padding:0;
+.trail--cover {
+  padding: 0;
 }
-.trail--cover--info{
-  min-width:98vw;
+.trail--cover--info {
+  min-width: 98vw;
 }
 
-@media only screen and (min-width: 900px){
-  .trail--cover--info{
+@media only screen and (min-width: 900px) {
+  .trail--cover--info {
     min-width: 800px;
     max-width: 1000px;
   }
 }
 
 /* Facebook Embed things */
-.tagembed-container{
-  max-width:960px;
-  margin-right:auto;
-  margin-left:auto;
+.tagembed-container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
 }
