@@ -245,6 +245,12 @@ ul.trail-conditions li h4 {
   height: 100%;
 }
 
+.childpages li a span {
+  font-size: var(--wp--preset--font-size--small) !important;
+  color: var(--wp--preset--color--tertiary);
+  text-align: right;
+}
+
 /* utilities */
 .m0 {
   margin-top: 0;
