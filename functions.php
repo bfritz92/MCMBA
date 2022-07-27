@@ -117,6 +117,7 @@ function show_childpages_shortcode() {
                 $page_link  = get_permalink( $page_id ); // returns the link to childpage
                 $page_img   = get_the_post_thumbnail( $page_id, 'medium' ); // returns the featured image <img> element
                 $page_title = $child_page->post_title; // returns the title of the child page
+				$location   = get_field( "location" );
 
                 ?>
 
@@ -126,6 +127,7 @@ function show_childpages_shortcode() {
 
                         <h4><?php echo $page_title; ?></h4>
                         <?php echo $page_img; //display featured image ?>
+						<span><?php echo $page_title; ?></span>
 
                     </a>
 
