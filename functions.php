@@ -124,9 +124,8 @@ function show_childpages_shortcode() {
                 <li class="childpage-<?php echo $page_id; ?>">
 
                     <a href="<?php echo $page_link; ?>">
-
+						<?php echo $page_img; //display featured image ?>
                         <h4><?php echo $page_title; ?></h4>
-                        <?php echo $page_img; //display featured image ?>
 						<span><?php echo $page_title; ?></span>
 
                     </a>
