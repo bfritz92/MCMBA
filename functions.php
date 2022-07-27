@@ -126,7 +126,7 @@ function show_childpages_shortcode() {
                     <a href="<?php echo $page_link; ?>">
 						<?php echo $page_img; //display featured image ?>
                         <h4><?php echo $page_title; ?></h4>
-						<span><?php echo $page_title; ?></span>
+						<span><?php echo $location; ?></span>
 
                     </a>
 
