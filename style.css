@@ -237,6 +237,7 @@ ul.trail-conditions li h4 {
 
 .childpages li a h4 {
   font-size: var(--wp--preset--font-size--medium) !important;
+  color: var(--wp--preset--color--secondary);
 }
 
 .childpages li a img {
