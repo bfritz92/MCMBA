@@ -238,6 +238,7 @@ ul.trail-conditions li h4 {
 .childpages li a h4 {
   font-size: var(--wp--preset--font-size--medium) !important;
   color: var(--wp--preset--color--secondary);
+  text-transform: uppercase;
 }
 
 .childpages li a img {
@@ -250,6 +251,7 @@ ul.trail-conditions li h4 {
   font-size: var(--wp--preset--font-size--small) !important;
   color: var(--wp--preset--color--tertiary);
   text-align: right;
+  text-transform: uppercase;
 }
 
 /* utilities */
