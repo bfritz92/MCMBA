@@ -160,7 +160,7 @@ ul.wp-block-navigation__submenu-container
   span.wp-block-navigation-item__label {
   font-size: var(--wp--preset--font-size--small) !important;
 }
-#modal-2-content ul.wp-block-navigation__container li:last-child a {
+ul.wp-block-navigation__container li.donate {
   background-color: var(--wp--preset--color--primary);
   color: white;
   padding: 20px 30px;
