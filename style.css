@@ -154,6 +154,10 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 /* Typography */
 
 /* Menu */
+.wp-block-navigation__responsive-container-content{
+  z-index:1;
+}
+
 ul.wp-block-navigation__submenu-container
   li.wp-block-navigation-item.wp-block-navigation-link
   a.wp-block-navigation-item__content
