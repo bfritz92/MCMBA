@@ -312,7 +312,9 @@ ul.trail-conditions li h4 {
 .wp-block-post-template .wp-block-post figure{
   margin:0;
 }
-.wp-block-post-template .wp-block-post h3,
+.wp-block-post-template .wp-block-post h3{
+  padding: 0 10px;
+}
 .wp-block-post-template .wp-block-post .wp-block-post-excerpt{
   padding: 0 10px;
   font-family: var(--wp--preset--font-family--lora);
