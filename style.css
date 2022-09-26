@@ -235,6 +235,10 @@ ul.trail-conditions li h4 {
   justify-content: center;
   padding-left: 0;
 }
+.childpages li{
+  flex: 0 0 30%;
+    min-width: 200px;
+}
 .childpages li a {
   display: flex;
   flex-direction: column;
