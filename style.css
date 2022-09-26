@@ -254,7 +254,8 @@ ul.trail-conditions li h4 {
 .childpages li a img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  height: 100%;
+  height: auto;
+    width: 100%;
 }
 
 .childpages li a span {
