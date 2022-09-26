@@ -322,5 +322,5 @@ ul.trail-conditions li h4 {
 }
 .wp-block-post-template .wp-block-post .wp-block-post-excerpt .wp-block-post-excerpt__more-text a{
   color:var(--wp--preset--color--primary);
-  font-family: var(--wp-preset--font-family--roboto-condensed) !important;
+  font-family: var(--wp--preset--font-family--roboto-condensed) !important;
 }
