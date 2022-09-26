@@ -115,7 +115,7 @@ function show_childpages_shortcode() {
 
                 $page_id    = $child_page->ID; // get the ID of the childpage
                 $page_link  = get_permalink( $page_id ); // returns the link to childpage
-                $page_img   = get_the_post_thumbnail( $page_id, 'medium' ); // returns the featured image <img> element
+                $page_img   = get_the_post_thumbnail( $page_id, 'large' ); // returns the featured image <img> element
                 $page_title = $child_page->post_title; // returns the title of the child page
 				$location   = get_field( 'location', $page_id );
 

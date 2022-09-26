@@ -256,7 +256,6 @@ ul.trail-conditions li h4 {
 .childpages li a span {
   font-size: var(--wp--preset--font-size--tiny) !important;
   color: var(--wp--preset--color--secondary);
-  text-align: right;
   text-transform: uppercase;
   text-decoration: none;
 }
