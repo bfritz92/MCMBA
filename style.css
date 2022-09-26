@@ -306,3 +306,19 @@ ul.trail-conditions li h4 {
     font-weight: 700;
     letter-spacing: .5px;
 }
+.wp-block-post-template .wp-block-post{
+  background-color: rgba(255, 255, 255, .7);
+}
+.wp-block-post-template .wp-block-post figure{
+  margin:0;
+}
+.wp-block-post-template .wp-block-post h3,
+.wp-block-post-template .wp-block-post .wp-block-post-excerpt{
+  padding: 0 10px;
+}
+.wp-block-post-template .wp-block-post .wp-block-post-excerpt .wp-block-post-excerpt__more-text{
+  text-align:right;
+}
+.wp-block-post-template .wp-block-post .wp-block-post-excerpt .wp-block-post-excerpt__more-text a{
+  color:var(--wp--preset--color--primary);
+}
