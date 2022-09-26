@@ -152,7 +152,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 }
 
 /* Typography */
-
+.lora{font-family: var(--wp--preset--font-family--lora)!important;}
 /* Menu */
 .top-nav{
   z-index:3;
