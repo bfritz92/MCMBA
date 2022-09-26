@@ -236,8 +236,7 @@ ul.trail-conditions li h4 {
   padding-left: 0;
 }
 .childpages li{
-  flex: 0 0 30%;
-    min-width: 200px;
+  max-width: 270px;
 }
 .childpages li a {
   display: flex;
