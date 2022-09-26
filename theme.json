@@ -167,6 +167,10 @@
       ],
       "fontSizes": [
         {
+          "size": ".8rem",
+          "slug": "tiny"
+        },
+        {
           "size": "1rem",
           "slug": "small"
         },
