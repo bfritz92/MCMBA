@@ -226,6 +226,15 @@ ul.trail-conditions li h4 {
   padding-left: 5px;
 }
 
+/* Event Pages */
+.event-info--response{
+  color:var(--wp--preset--color--tertiary);
+  padding-left:7px;
+}
+.event-info--response a {
+  color: var(--wp--preset--color--tertiary);
+}
+
 /* child page list */
 .childpages {
   display: flex;
