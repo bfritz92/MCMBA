@@ -1,11 +1,48 @@
+<!-- wp:template-part {"slug":"header","theme":"MCMBA"} /-->
+
 <!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"minHeight":566,"minHeightUnit":"px","contentPosition":"bottom left","isDark":false,"className":"trail\u002d\u002dcover m0"} -->
 <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left trail--cover m0"
     style="min-height:566px"><span aria-hidden="true"
         class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
     <div class="wp-block-cover__inner-container">
-        <!-- wp:group {"style":{"spacing":{"blockGap":"rem"}},"textColor":"background","className":"trail\u002d\u002dcover\u002d\u002dinfo blue-bg","layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
+        <!-- wp:group {"style":{"spacing":{"blockGap":"rem"}},"textColor":"background","className":"trail\u002d\u002dcover\u002d\u002dinfo blue-bg","layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","justifyContent":"left"}} -->
         <div class="wp-block-group trail--cover--info blue-bg has-background-color has-text-color">
             <!-- wp:post-title {"style":{"typography":{"textTransform":"uppercase"},"spacing":{"margin":{"left":"2.5rem","right":"1.5rem"}}}} /-->
+
+            <!-- wp:group {"style":{"spacing":{"padding":{"right":"1.5rem","left":"2.5rem","bottom":"1rem"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
+            <div class="wp-block-group" style="padding-right:1.5rem;padding-bottom:1rem;padding-left:2.5rem">
+                <!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","flexWrap":"wrap","orientation":"horizontal"}} -->
+                <div class="wp-block-group">
+                    <!-- wp:html -->
+                    <div class="event-info"><span class="event-info">Date:</span><span class="event-info--response">[acf
+                            field='event_date']</span></div>
+                    <!-- /wp:html -->
+
+                    <!-- wp:html -->
+                    <div class="event-info"><span class="event-info">Location:</span><span
+                            class="event-info--response"><a href="[acf field='event_location_link']">[acf
+                                field="event_location"]</a></span></div>
+                    <!-- /wp:html -->
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:kadence/advancedbtn {"uniqueID":"_a2ade6-9e","btns":[{"text":"Register Online","link":"[acf field='registration_link']","target":"_self","size":"","paddingBT":"","paddingLR":"","color":"#FFFFFF","background":"","border":"#FFFFFF","backgroundOpacity":1,"borderOpacity":1,"borderRadius":0,"borderWidth":"","colorHover":"#414663","backgroundHover":"#FFFFFF","borderHover":"#FFFFFF","backgroundHoverOpacity":1,"borderHoverOpacity":1,"icon":"","iconSide":"right","iconHover":false,"cssClass":"","noFollow":false,"gap":5,"responsiveSize":["",""],"gradient":["#999999",1,0,100,"linear",180,"center center"],"gradientHover":["#777777",1,0,100,"linear",180,"center center"],"btnStyle":"basic","btnSize":"standard","backgroundType":"solid","backgroundHoverType":"solid","width":["","",""],"responsivePaddingBT":["",""],"responsivePaddingLR":["",""],"boxShadow":[false,"#000000",0.2,1,1,2,0,false],"boxShadowHover":[false,"#000000",0.4,2,2,3,0,false],"sponsored":false,"download":false,"tabletGap":"","mobileGap":"","inheritStyles":"","iconSize":["","",""],"iconPadding":["","","",""],"iconTabletPadding":["","","",""],"iconMobilePadding":["","","",""],"onlyIcon":[false,"",""],"iconColor":"","iconColorHover":"","sizeType":"px","iconSizeType":"px","label":"","marginUnit":"px","margin":["","","",""],"tabletMargin":["","","",""],"mobileMargin":["","","",""],"anchor":"","borderStyle":""}],"textTransform":"uppercase","widthType":"full"} -->
+                <div
+                    class="wp-block-kadence-advancedbtn kt-btn-align-center kt-btn-tablet-align-inherit kt-btn-mobile-align-inherit kt-btns-wrap kt-btns_a2ade6-9e">
+                    <div class="kt-btn-wrap kt-btn-wrap-0"><a
+                            class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-false"
+                            href="[acf field='registration_link']" style="border-radius:0px"><span
+                                class="kt-btn-inner-text">Register Online</span></a></div>
+                </div>
+                <!-- /wp:kadence/advancedbtn -->
+
+                <!-- wp:image {"id":354,"width":25,"height":25,"sizeSlug":"full","linkDestination":"custom"} -->
+                <figure class="wp-block-image size-full is-resized"><a href="[acf field='facebook_event_page']"><img
+                            src="https://mcmba.brianleefritz.com/wp-content/uploads/2022/06/facebook-square.png" alt=""
+                            class="wp-image-354" width="25" height="25" /></a></figure>
+                <!-- /wp:image -->
+            </div>
+            <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
     </div>
@@ -14,7 +51,7 @@
 
 <!-- wp:group {"tagName":"main","layout":{"contentSize":"1200px"}} -->
 <main class="wp-block-group">
-    
+    <!-- wp:post-content {"layout":{"inherit":true}} /-->
 </main>
 <!-- /wp:group -->
 

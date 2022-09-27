@@ -235,6 +235,26 @@ ul.trail-conditions li h4 {
   color: var(--wp--preset--color--tertiary);
 }
 
+/* Contact */
+#gform_wrapper_2 .gform_heading{
+  display:none;
+}
+
+.gform_footer.top_label input.gform_button{
+  font-family:var(--wp--preset--font-family--roboto-condensed);
+  font-size: var(--wp--preset--font-size--medium);
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--wp--preset--color--primary);
+    border: 3px solid var(--wp--preset--color--foreground);
+    padding: 10px;
+    color:var(--wp--preset--color--foreground);
+}
+.gform_footer.top_label input.gform_button:hover, .gform_footer.top_label input.gform_button:focus{
+  background-color: var(--wp--preset--color--background);
+    border: 3px solid var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--background);
+}
 /* child page list */
 .childpages {
   display: flex;
