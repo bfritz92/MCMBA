@@ -253,7 +253,7 @@ ul.trail-conditions li h4 {
 .gform_footer.top_label input.gform_button:hover, .gform_footer.top_label input.gform_button:focus{
   background-color: var(--wp--preset--color--background);
     border: 3px solid var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--primary);
 }
 /* child page list */
 .childpages {
