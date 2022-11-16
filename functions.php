@@ -166,7 +166,7 @@ function acf_fields() {
 
     // return the object
     return ob_get_clean();
-	echo <?php the_field('text_field', $current_page_id); ?>;
+	echo the_field('text_field', $current_page_id);
 
 }
 add_shortcode( 'call_field', 'acf_fields' );
