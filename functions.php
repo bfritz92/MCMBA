@@ -225,7 +225,7 @@ function acf_event_link() {
 	return $event_link;
 
 }
-add_shortcode( 'call_event_link', 'acf_event_link' );s
+add_shortcode( 'call_event_link', 'acf_event_link' );
 
 
 function acf_event_location_link() {
@@ -240,7 +240,7 @@ function acf_event_location_link() {
 
 }
 
-add_shortcode( 'call_event_location', 'acf_event_location_link' );
+add_shortcode( 'call_event_location_link', 'acf_event_location_link' );
 
 function acf_event_registration_link() {
 	ob_start();
