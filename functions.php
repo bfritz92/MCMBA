@@ -161,12 +161,13 @@ function acf_fields() {
 
         // get the ID of the current (parent) page
         $current_page_id = get_the_ID();
+		$field = the_field('trail_forks');
 
     }//END if (is_page())
 
     // return the object
     return ob_get_clean();
-	echo the_field('text_field', $current_page_id);
+	echo do shortcode([acf field = \'$trail_forks, $current_page_id]\')
 
 }
 add_shortcode( 'call_field', 'acf_fields' );
