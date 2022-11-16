@@ -148,16 +148,21 @@ function show_childpages_shortcode() {
 }
 add_shortcode( 'show_childpages', 'show_childpages_shortcode' );
 
+
 //ACF data out of the loop by calling for current postID
-function acf_fields() {
+function call_field( $atts= '' ) {
+	
+	$attributes = shortcode_atts( array(
+		'field' => 'trail_forks',
+	), $atts );
 	ob_start();
     // get the ID of the current (parent) page
     $current_page_id = get_the_ID();
 	//use it to get the trail_id
-	$trail_id = the_field('trail_forks', $current_page_id);
+	$called = the_field($field, $current_page_id);
 	return ob_get_clean();
 	//return the variable
-	return $trail_id;
+	return $called;
 
 }
-add_shortcode( 'call_field', 'acf_fields' );
+add_shortcode( 'call_the_field', 'call_field' );
