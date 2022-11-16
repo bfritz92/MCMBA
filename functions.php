@@ -158,7 +158,6 @@ function acf_trail_forks() {
 	return ob_get_clean();
 	//return the variable
 	return $trail_id;
-
 }
 add_shortcode( 'call_trail', 'acf_trail_forks' );
 
@@ -171,9 +170,8 @@ function acf_url() {
 	return ob_get_clean();
 	//return the variable
 	return $trail_id;
-
 }
-add_shortcode( 'call_url', 'acf_trail_forks' );
+add_shortcode( 'call_url', 'acf_url' );
 
 function acf_location() {
 	ob_start();
@@ -184,7 +182,6 @@ function acf_location() {
 	return ob_get_clean();
 	//return the variable
 	return $location;
-
 }
 add_shortcode( 'call_location', 'acf_location' );
 
@@ -197,7 +194,6 @@ function acf_event_date() {
 	return ob_get_clean();
 	//return the variable
 	return $event_date;
-
 }
 add_shortcode( 'call_event_date', 'acf_event_date' );
 
@@ -210,7 +206,6 @@ function acf_event_location() {
 	return ob_get_clean();
 	//return the variable
 	return $event_location;
-
 }
 add_shortcode( 'call_event_location', 'acf_event_location' );
 
@@ -223,7 +218,6 @@ function acf_event_link() {
 	return ob_get_clean();
 	//return the variable
 	return $event_link;
-
 }
 add_shortcode( 'call_event_link', 'acf_event_link' );
 
@@ -237,9 +231,7 @@ function acf_event_location_link() {
 	return ob_get_clean();
 	//return the variable
 	return $event_location_link;
-
 }
-
 add_shortcode( 'call_event_location_link', 'acf_event_location_link' );
 
 function acf_event_registration_link() {
@@ -251,7 +243,6 @@ function acf_event_registration_link() {
 	return ob_get_clean();
 	//return the variable
 	return $event_registration_link;
-
 }
 add_shortcode( 'call_event_registration_link', 'acf_event_registration_link' );
 
@@ -264,6 +255,5 @@ function acf_facebook_event_page() {
 	return ob_get_clean();
 	//return the variable
 	return $facebook_event_page;
-
 }
 add_shortcode( 'call_facebook_event_page', 'acf_facebook_event_page' );
