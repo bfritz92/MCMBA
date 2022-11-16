@@ -147,3 +147,26 @@ function show_childpages_shortcode() {
 
 }
 add_shortcode( 'show_childpages', 'show_childpages_shortcode' );
+
+//ACF data out of the loop by calling for current postID
+function acf_fields() {
+
+    // a shortcode should just return the content not echo html
+    // so we start to create an object, and on the end we return it
+    // if we dont do this the shortcode will be displayed in the top of the content
+    ob_start();
+
+    // only start if we are on a single page
+    if ( is_page() ) {
+
+        // get the ID of the current (parent) page
+        $current_page_id = get_the_ID();
+
+    }//END if (is_page())
+
+    // return the object
+    return ob_get_clean();
+	echo the_field('trail_forks', $current_page_id);
+
+}
+add_shortcode( 'call_field', 'acf_fields' );
