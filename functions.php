@@ -161,3 +161,17 @@ function acf_fields() {
 
 }
 add_shortcode( 'call_field', 'acf_fields' );
+
+//ACF data out of the loop by calling for current postID
+function call_field($field) {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$called_field = the_field($field, $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $called_field;
+
+}
+add_shortcode( 'call_the_field', 'call_field' );
