@@ -163,10 +163,10 @@ function acf_fields() {
 add_shortcode( 'call_field', 'acf_fields' );
 
 //ACF data out of the loop by calling for current postID
-function call_field( $atts ) {
+function call_field( $atts= '' ) {
 	
 	$attributes = shortcode_atts( array(
-		'field' => $field,
+		'field' => 'trail_forks',
 	), $atts );
 	ob_start();
     // get the ID of the current (parent) page
