@@ -154,10 +154,9 @@ function acf_fields() {
     // get the ID of the current (parent) page
     $current_page_id = get_the_ID();
 	//use it to get the trail_id
-	$rid = the_field('trail_forks', $current_page_id);
+	$trail_id = the_field('trail_forks', $current_page_id);
 	//return the variable
 	return $trail_id;
-	echo $trail_id;
 
 }
 add_shortcode( 'call_field', 'acf_fields' );
