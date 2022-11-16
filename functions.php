@@ -159,7 +159,7 @@ function acf_fields() {
         $current_page_id = get_the_ID();
     // return the object
     return ob_get_clean();
-	echo the_field('trail_forks', $current_page_id);
+	return the_field('trail_forks', $current_page_id);
 
 }
 add_shortcode( 'call_field', 'acf_fields' );
