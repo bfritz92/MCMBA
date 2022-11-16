@@ -227,6 +227,21 @@ function acf_event_link() {
 }
 add_shortcode( 'call_event_link', 'acf_event_link' );
 
+function acf_event_location() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$event_location = the_field('event_location', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $event_location;
+
+}
+
+add_shortcode( 'call_event_location', 'acf_event_location' );
+
+
 function acf_event_location_link() {
 	ob_start();
     // get the ID of the current (parent) page
@@ -238,6 +253,7 @@ function acf_event_location_link() {
 	return $event_location_link;
 
 }
+
 add_shortcode( 'call_event_location', 'acf_event_location_link' );
 
 function acf_event_registration_link() {
