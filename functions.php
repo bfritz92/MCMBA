@@ -147,3 +147,102 @@ function show_childpages_shortcode() {
 
 }
 add_shortcode( 'show_childpages', 'show_childpages_shortcode' );
+
+//ACF data out of the loop by calling for current postID
+function acf_trail_forks() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$trail_id = the_field('trail_forks', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $trail_id;
+}
+add_shortcode( 'call_trail', 'acf_trail_forks' );
+
+function acf_url() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$trail_id = the_field('trail_forks_url', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $trail_id;
+}
+add_shortcode( 'call_url', 'acf_url' );
+
+function acf_location() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$location = the_field('location', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $location;
+}
+add_shortcode( 'call_location', 'acf_location' );
+
+function acf_event_date() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$event_date = the_field('event_date', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $event_date;
+}
+add_shortcode( 'call_event_date', 'acf_event_date' );
+
+function acf_event_location() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$event_location = the_field('event_location', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $event_location;
+}
+add_shortcode( 'call_event_location', 'acf_event_location' );
+
+function acf_event_link() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$event_link = the_field('event_link', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $event_link;
+}
+add_shortcode( 'call_event_link', 'acf_event_link' );
+
+
+
+function acf_event_registration_link() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$event_registration_link = the_field('eventregistrationn_link', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $event_registration_link;
+}
+add_shortcode( 'call_event_registration_link', 'acf_event_registration_link' );
+
+function acf_facebook_event_page() {
+	ob_start();
+    // get the ID of the current (parent) page
+    $current_page_id = get_the_ID();
+	//use it to get the trail_id
+	$facebook_event_page = the_field('facebook_event_page', $current_page_id);
+	return ob_get_clean();
+	//return the variable
+	return $facebook_event_page;
+}
+add_shortcode( 'call_facebook_event_page', 'acf_facebook_event_page' );
