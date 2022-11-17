@@ -233,7 +233,7 @@ function acf_event_location_link() {
 	return $event_location_link;
 }
 add_shortcode( 'call_event_location_link', 'acf_event_location_link' );
-
+Sp
 function acf_event_registration_link() {
 	ob_start();
     // get the ID of the current (parent) page
