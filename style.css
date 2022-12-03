@@ -353,6 +353,36 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
+#donation-form .gform_body .gfield-choice-input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  z-index: -99;
+}
+
+#donation-form .gform_body .gfield-choice-input[type="radio"]:checked + label {
+  background-color: var(--wp--preset--color--background);
+  color: #fff !important;
+  display: inline-block;
+  font-weight: 700;
+}
+
+#donation-form .gform_body .gfield-choice-input[type="radio"] label {
+  min-width: 100%;
+  padding: 0.5rem 0.25rem;
+  border: 2px solid var(--wp--preset--color--background);
+  border-radius: 2px;
+  color: var(--wp--preset--color--background);
+  border-radius: 2px;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+#donation-form .gform_body .gfield-choice-input[type="radio"] label:hover, #donation-form .gform_body .gfield-choice-input[type="radio"] label:focus {
+  background-color: var(--wp--preset--color--background);
+  color: #fff !important;
+}
+
 #donation-form .gform_body .amount div.gfield_radio {
   display: -ms-grid;
   display: grid;

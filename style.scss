@@ -332,6 +332,36 @@ ul.trail-conditions li h4 {
         }
       }
     }
+    // GENERAL RADIO BUTTONS
+    .gfield-choice-input[type="radio"] {
+      //remove radio buttons
+      visibility: hidden;
+      position: absolute; //takes element out of flow
+      left: -9999px; //hacky? moves it waaaay offscreen
+      z-index: -99; //no really, I don't want to see it
+
+      &:checked + label {
+        background-color: var(--wp--preset--color--background);
+        color: #fff !important;
+        display: inline-block;
+        font-weight: 700;
+      }
+
+      label {
+        min-width: 100%;
+        padding: 0.5rem 0.25rem;
+        border: 2px solid var(--wp--preset--color--background);
+        border-radius: 2px;
+        color: var(--wp--preset--color--background);
+        border-radius: 2px;
+        transition: background-color 150ms ease-in-out;
+        &:hover,
+        &:focus {
+          background-color: var(--wp--preset--color--background);
+          color: #fff !important;
+        }
+      }
+    }
     .amount {
       div.gfield_radio {
         display: -ms-grid;
