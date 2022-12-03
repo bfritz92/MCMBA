@@ -322,21 +322,21 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
-#donor-form .gform_body #field_1_5 .gfield_radio {
+#donor-form .gform_body #field_1_5 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-#donor-form .gform_body #field_1_7 .gfield_radio {
+#donor-form .gform_body #field_1_7 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-#donor-form .gform_body #field_1_7 .gfield_radio .gchoice:last-child {
+#donor-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child {
   grid-columns: 1/-1;
 }
 /*# sourceMappingURL=style.css.map */

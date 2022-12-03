@@ -308,14 +308,14 @@ ul.trail-conditions li h4 {
     }
     #field_1_5 {
       //one-time or monthly
-      .gfield_radio {
+      .ginput_container .gfield_radio {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
     }
     #field_1_7 {
       //amount selector
-      .gfield_radio {
+      .ginput_container .gfield_radio {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         .gchoice:last-child {
