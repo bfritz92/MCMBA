@@ -362,7 +362,6 @@ ul.trail-conditions li h4 {
       }
       &.one-time,
       &.monthly {
-        padding: 0.5rem 1rem;
         text-align: center;
         .ginput_container_radio {
           .gfield_radio {
@@ -373,16 +372,17 @@ ul.trail-conditions li h4 {
                 min-width: 100%;
                 display: flex;
                 transition: background-color 150ms ease-in-out;
-                color: var(--wp--preset--color--primary);
+                color: var(--wp--preset--color--background);
                 font-family: var(--wp--preset--font-family--roboto);
                 font-weight: 700;
                 margin-left: 0px;
-                &:hover {
-                  color: #fff;
-                  background-color: var(--wp--preset--color--primary);
-                }
-                &:before {
-                  content: "$";
+                background-color: transparent;
+                border: 4px solid #fff;
+                &:hover,
+                &:active,
+                &:focus {
+                  color: var(--wp--preset--color--secondary);
+                  background-color: var(--wp--preset--color--background);
                 }
               }
               &:last-child {

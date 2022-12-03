@@ -383,7 +383,6 @@ ul.trail-conditions li h4 {
 }
 
 #donation-form .gform_body .amount.one-time, #donation-form .gform_body .amount.monthly {
-  padding: 0.5rem 1rem;
   text-align: center;
 }
 
@@ -402,19 +401,17 @@ ul.trail-conditions li h4 {
   display: flex;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
-  color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
   font-family: var(--wp--preset--font-family--roboto);
   font-weight: 700;
   margin-left: 0px;
+  background-color: transparent;
+  border: 4px solid #fff;
 }
 
-#donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
-  color: #fff;
-  background-color: var(--wp--preset--color--primary);
-}
-
-#donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice label:before, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice label:before {
-  content: "$";
+#donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice label:active, #donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice label:focus, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice label:active, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice label:focus {
+  color: var(--wp--preset--color--secondary);
+  background-color: var(--wp--preset--color--background);
 }
 
 #donation-form .gform_body .amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #donation-form .gform_body .amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
