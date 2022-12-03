@@ -306,21 +306,17 @@ ul.trail-conditions li h4 {
     #field_1_3 {
       //top intro
     }
-    #field_1_5 {
+    #input_1_5 {
       //one-time or monthly
-      .ginput_container .gfield_radio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
-    #field_1_7 {
+    #input_1_7 {
       //amount selector
-      .ginput_container .gfield_radio {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        .gchoice:last-child {
-          grid-columns: 1/-1;
-        }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .gchoice:last-child {
+        grid-columns: 1/-1;
       }
     }
   }
