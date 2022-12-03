@@ -302,22 +302,21 @@ ul.trail-conditions li h4 {
   .gf_progressbar_wrapper {
     display: none; //hide progress bar
   }
-  .gform_body {
-    #field_1_3 {
-      //top intro
-    }
-    #input_1_5 {
-      //one-time or monthly
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    #input_1_7 {
-      //amount selector
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      .gchoice:last-child {
-        grid-columns: 1/-1;
-      }
+
+  #field_1_3 {
+    //top intro
+  }
+  #input_1_5 {
+    //one-time or monthly
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #input_1_7 {
+    //amount selector
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .gchoice:last-child {
+      grid-columns: 1/-1;
     }
   }
 }
