@@ -317,7 +317,8 @@ ul.trail-conditions li h4 {
         }
       }
     }
-    #field_1_7 {
+    #field_1_7,
+    #field_1_8 {
       //amount selector
       .ginput_container .gfield_radio {
         display: grid;
@@ -328,6 +329,128 @@ ul.trail-conditions li h4 {
         }
         input {
           display: none;
+        }
+      }
+    }
+    .amount {
+      div.gfield_radio {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr) 3;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        input {
+          display: none;
+        }
+      }
+
+      div.gchoice label {
+        background-color: #fff;
+        max-width: 100%;
+        height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #004b7a;
+        border: 3px solid #004b7a;
+      }
+      &.one-time,
+      &.monthly {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        .ginput_container_radio {
+          .gfield_radio {
+            padding: 0;
+            .gchoice {
+              width: 100%;
+              label {
+                min-width: 100%;
+                display: flex;
+                transition: background-color 150ms ease-in-out;
+                color: var(--wp--preset--color--primary);
+                font-family: var(--wp--preset--font-family--roboto);
+                font-weight: 700;
+                margin-left: 0px;
+                &:hover {
+                  color: #fff;
+                  background-color: var(--wp--preset--color--primary);
+                }
+                &:before {
+                  content: "$";
+                }
+              }
+              &:last-child {
+                width: 100%;
+                grid-column: 1/-1;
+                label:before,
+                label:after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.monthly {
+        .ginput_container_radio div.gfield_radio div {
+          label:after {
+            content: " /mo";
+            font-size: 0.8em;
+            margin-left: 2px;
+            margin-top: 0.9em;
+            display: flex;
+          }
+        }
+      }
+      // Other Amount Options
+      & + .gfield {
+        .ginput_container {
+          .preinput {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 0;
+            font-size: 1.2rem;
+            float: left;
+            text-align: right;
+            width: 25px;
+            color: var(--wp--preset--color--primary);
+            font-weight: 700;
+            font-family: var(--wp--preset--font-family--roboto);
+          }
+          .otherinput {
+            position: relative;
+            top: 10%;
+            border: 0px;
+            float: right;
+            text-align: left;
+            width: calc(100% - 25px);
+            input {
+              position: relative;
+              width: 55%;
+              top: 10%;
+              border: 0px;
+              float: right;
+              text-align: left;
+              font-size: 1.2rem;
+              color: var(--wp--preset--color--primary);
+              min-width: 100%;
+              max-height: 100%;
+              text-align: center;
+              padding: 0;
+              outline: none;
+              -webkit-appearance: none;
+              margin: 0;
+              -moz-appearance: textfield;
+              margin: -4px 0px;
+            }
+          }
         }
       }
     }
