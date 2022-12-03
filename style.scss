@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: Twenty Twenty-Two
 Theme URI: https://wordpress.org/themes/twentytwentytwo/
@@ -17,12 +16,15 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
 Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 */
+
 /*
  * Font smoothing.
  * This is a niche setting that will not be available via Global Styles.
  * https://github.com/WordPress/gutenberg/issues/35934
  */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@700&display=swap");
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +35,7 @@ body {
  * Necessary until the following issue is resolved in Gutenberg:
  * https://github.com/WordPress/gutenberg/issues/27075
  */
+
 a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.25ch;
@@ -40,8 +43,7 @@ a {
 
 a:hover,
 a:focus {
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  text-decoration-style: dashed;
 }
 
 a:active {
@@ -51,8 +53,7 @@ a:active {
 .wp-block-navigation .wp-block-navigation-item a:hover,
 .wp-block-navigation .wp-block-navigation-item a:focus {
   text-decoration: underline;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
 }
 
 /*
@@ -61,6 +62,7 @@ a:active {
  * https://github.com/WordPress/gutenberg/issues/36444
  * https://github.com/WordPress/gutenberg/issues/27760
  */
+
 .wp-block-search__button,
 .wp-block-file .wp-block-file__button {
   background-color: var(--wp--preset--color--primary);
@@ -76,6 +78,7 @@ a:active {
  * Necessary until the following issue is resolved in Gutenberg:
  * https://github.com/WordPress/gutenberg/issues/27075
  */
+
 .wp-block-search__button:hover,
 .wp-block-file .wp-block-file__button:hover,
 .wp-block-button__link:hover {
@@ -93,6 +96,7 @@ a:active {
  * https://github.com/WordPress/gutenberg/issues/35607
  * https://github.com/WordPress/gutenberg/issues/35884
  */
+
 .wp-site-blocks,
 body > .is-root-container,
 .edit-post-visual-editor__post-title-wrapper,
@@ -112,9 +116,9 @@ body > .is-root-container,
 .wp-site-blocks > .wp-block-template-part > .wp-block-cover,
 body > .is-root-container > .wp-block-cover,
 body
-> .is-root-container
-> .wp-block-template-part
-> .wp-block-group.has-background,
+  > .is-root-container
+  > .wp-block-template-part
+  > .wp-block-group.has-background,
 body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 .is-root-container .wp-block[data-align="full"] {
   margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
@@ -125,6 +129,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 /* Blocks inside columns don't have negative margins. */
 .wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
 .is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
 .wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
 .is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
   margin-left: auto !important;
@@ -138,6 +143,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
  * spacing defined above. This behavior may be built into
  * the Block Editor in the future.
  */
+
 .wp-block-navigation__responsive-container.is-menu-open {
   padding-top: var(--wp--custom--spacing--outer);
   padding-bottom: var(--wp--custom--spacing--large);
@@ -150,38 +156,33 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 p.lora {
   font-family: var(--wp--preset--font-family--lora) !important;
 }
-
 /* Menu */
 .top-nav {
   z-index: 3;
 }
 
 ul.wp-block-navigation__submenu-container
-li.wp-block-navigation-item.wp-block-navigation-link
-a.wp-block-navigation-item__content
-span.wp-block-navigation-item__label {
+  li.wp-block-navigation-item.wp-block-navigation-link
+  a.wp-block-navigation-item__content
+  span.wp-block-navigation-item__label {
   font-size: var(--wp--preset--font-size--small) !important;
 }
-
 ul.wp-block-navigation__container li.donate {
   background-color: var(--wp--preset--color--primary);
   color: white;
   padding: 20px 30px;
 }
-
 .custom-logo {
   margin: 10px auto;
 }
-
 .entry-content {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
 }
-
 @media only screen and (min-width: 767px) {
   .top-nav {
-    -webkit-transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
-            transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
+    transform: translateX(
+      calc(1 * var(--wp--custom--spacing--outer))
+    ) !important;
     z-index: 2;
   }
 }
@@ -216,17 +217,12 @@ ul.trail-conditions {
   list-style: none;
   padding-left: 0;
 }
-
 ul.trail-conditions li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 ul.trail-conditions li div {
   width: 23px;
 }
-
 ul.trail-conditions li h4 {
   color: #fff;
   margin: 0;
@@ -238,7 +234,6 @@ ul.trail-conditions li h4 {
   color: var(--wp--preset--color--tertiary);
   padding-left: 7px;
 }
-
 .event-info--response a {
   color: var(--wp--preset--color--tertiary);
 }
@@ -258,41 +253,27 @@ ul.trail-conditions li h4 {
   padding: 10px;
   color: var(--wp--preset--color--foreground);
 }
-
 .gform_footer.top_label input.gform_button:hover,
 .gform_footer.top_label input.gform_button:focus {
   background-color: var(--wp--preset--color--background);
   border: 3px solid var(--wp--preset--color--primary);
   color: var(--wp--preset--color--primary);
 }
-
 /* child page list */
 .childpages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
   gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-left: 0;
 }
-
 .childpages li {
   max-width: 270px;
 }
-
 .childpages li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .childpages li a h4 {
@@ -304,8 +285,7 @@ ul.trail-conditions li h4 {
 
 .childpages li a img {
   aspect-ratio: 1 / 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: auto;
   width: 100%;
 }
@@ -318,25 +298,30 @@ ul.trail-conditions li h4 {
 }
 
 /*Donation Form*/
-#donor-form .gf_progressbar_wrapper {
-  display: none;
+#donor-form {
+  .gf_progressbar_wrapper {
+    display: none; //hide progress bar
+  }
+  .gform_body {
+    #field_1_3 {
+      //top intro
+    }
+    #field_1_5 {
+      //one-time or monthly
+      .gfield_radio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    #field_1_7 {
+      //amount selector
+      .gfield_radio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .gchoice:last-child {
+          grid-columns: 1/-1;
+        }
+      }
+    }
+  }
 }
-
-#donor-form .gform_body #field_1_5 .gfield_radio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-#donor-form .gform_body #field_1_7 .gfield_radio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-#donor-form .gform_body #field_1_7 .gfield_radio .gchoice:last-child {
-  grid-columns: 1/-1;
-}
-/*# sourceMappingURL=style.css.map */
