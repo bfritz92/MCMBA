@@ -318,25 +318,25 @@ ul.trail-conditions li h4 {
 }
 
 /*Donation Form*/
-#donor-form .gf_progressbar_wrapper {
+#donation-form .gf_progressbar_wrapper {
   display: none;
 }
 
-#donor-form #input_1_5 {
+#donation-form .gform_body #field_1_5 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-#donor-form #input_1_7 {
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-#donor-form #input_1_7 .gchoice:last-child {
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child {
   grid-columns: 1/-1;
 }
 /*# sourceMappingURL=style.css.map */
