@@ -311,6 +311,10 @@ ul.trail-conditions li h4 {
       .ginput_container .gfield_radio {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        input {
+          display: none;
+        }
       }
     }
     #field_1_7 {
@@ -318,8 +322,12 @@ ul.trail-conditions li h4 {
       .ginput_container .gfield_radio {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
         .gchoice:last-child {
           grid-column: 1/-1;
+        }
+        input {
+          display: none;
         }
       }
     }

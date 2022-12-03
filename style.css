@@ -327,6 +327,11 @@ ul.trail-conditions li h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#donation-form .gform_body #field_1_5 .ginput_container .gfield_radio input {
+  display: none;
 }
 
 #donation-form .gform_body #field_1_7 .ginput_container .gfield_radio {
@@ -334,9 +339,14 @@ ul.trail-conditions li h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 #donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child {
   grid-column: 1/-1;
+}
+
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio input {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
