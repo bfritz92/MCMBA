@@ -336,7 +336,7 @@ ul.trail-conditions li h4 {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child {
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio:last-child {
   grid-columns: 1/-1;
 }
 /*# sourceMappingURL=style.css.map */

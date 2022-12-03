@@ -318,7 +318,7 @@ ul.trail-conditions li h4 {
       .ginput_container .gfield_radio {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        .gchoice:last-child {
+        &:last-child {
           grid-columns: 1/-1;
         }
       }
