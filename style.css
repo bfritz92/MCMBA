@@ -207,6 +207,12 @@ ul.wp-block-navigation__container li.donate {
   background-repeat: repeat;
 }
 
+/* Stupid default block padding */
+.wp-site-blocks > * + * {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
 /* Trail conditions */
 ul.trail-conditions {
   list-style: none;
