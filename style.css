@@ -369,6 +369,13 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child label,
+#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #donation-form .gform_body .gfield-choice-input[type="radio"] {
   visibility: hidden;
   position: absolute;
