@@ -326,7 +326,14 @@ ul.trail-conditions li h4 {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         .gchoice:last-child {
+          //"other" choice
           grid-column: 1/-1;
+          input:checked {
+            display: flex;
+          }
+          label {
+            display: none;
+          }
         }
         input {
           display: none;
@@ -351,11 +358,11 @@ ul.trail-conditions li h4 {
 
       & ~ label {
         display: flex;
-        width: 100%;
+        min-width: 100%;
         justify-content: center;
         height: 60px;
         align-items: center;
-        color: blue;
+        color: var(--wp--preset--color--background);
         border: 2px solid white;
         transition: background-color 150ms ease-in-out;
         background-color: transparent;
