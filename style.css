@@ -364,7 +364,9 @@ ul.trail-conditions li h4 {
   z-index: -99;
 }
 
-#donation-form .gform_body .gfield-choice-input[type="radio"]:checked + label {
+#donation-form .gform_body .gfield-choice-input[type="radio"]:checked + label,
+#donation-form .gform_body .gfield-choice-input[type="radio"] label:hover,
+#donation-form .gform_body .gfield-choice-input[type="radio"] label:active {
   background-color: var(--wp--preset--color--background);
   color: #fff;
   display: inline-block;
@@ -373,18 +375,11 @@ ul.trail-conditions li h4 {
 
 #donation-form .gform_body .gfield-choice-input[type="radio"] label {
   min-width: 100%;
-  padding: 0.5rem 0.25rem;
+  height: 60px;
   border: 2px solid #fff;
-  border-radius: 2px;
-  color: var(--wp--preset--color--background);
-  border-radius: 2px;
+  color: #fff;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   background-color: transparent;
-}
-
-#donation-form .gform_body .gfield-choice-input[type="radio"] label:hover, #donation-form .gform_body .gfield-choice-input[type="radio"] label:focus {
-  background-color: var(--wp--preset--color--background);
-  color: #fff !important;
 }
 /*# sourceMappingURL=style.css.map */

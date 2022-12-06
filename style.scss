@@ -341,7 +341,9 @@ ul.trail-conditions li h4 {
       left: -9999px; //hacky? moves it waaaay offscreen
       z-index: -99; //no really, I don't want to see it
 
-      &:checked + label {
+      &:checked + label,
+      label:hover,
+      label:active {
         background-color: var(--wp--preset--color--background);
         color: #fff;
         display: inline-block;
@@ -350,18 +352,11 @@ ul.trail-conditions li h4 {
 
       label {
         min-width: 100%;
-        padding: 0.5rem 0.25rem;
+        height: 60px;
         border: 2px solid #fff;
-        border-radius: 2px;
-        color: var(--wp--preset--color--background);
-        border-radius: 2px;
+        color: #fff;
         transition: background-color 150ms ease-in-out;
         background-color: transparent;
-        &:hover,
-        &:focus {
-          background-color: var(--wp--preset--color--background);
-          color: #fff !important;
-        }
       }
     }
   }
