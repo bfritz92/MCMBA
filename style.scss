@@ -209,7 +209,10 @@ ul.wp-block-navigation__container li.donate {
 }
 
 /* Stupid default block padding */
-
+.wp-site-blocks > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 /* Trail conditions */
 ul.trail-conditions {
   list-style: none;
