@@ -351,11 +351,12 @@ ul.trail-conditions li h4 {
       label {
         min-width: 100%;
         padding: 0.5rem 0.25rem;
-        border: 2px solid var(--wp--preset--color--background);
+        border: 2px solid #fff;
         border-radius: 2px;
         color: var(--wp--preset--color--background);
         border-radius: 2px;
         transition: background-color 150ms ease-in-out;
+        background-color: transparent;
         &:hover,
         &:focus {
           background-color: var(--wp--preset--color--background);
