@@ -366,7 +366,7 @@ ul.trail-conditions li h4 {
 
 #donation-form .gform_body .gfield-choice-input[type="radio"]:checked + label {
   background-color: var(--wp--preset--color--background);
-  color: #fff !important;
+  color: #fff;
   display: inline-block;
   font-weight: 700;
 }
@@ -386,93 +386,5 @@ ul.trail-conditions li h4 {
 #donation-form .gform_body .gfield-choice-input[type="radio"] label:hover, #donation-form .gform_body .gfield-choice-input[type="radio"] label:focus {
   background-color: var(--wp--preset--color--background);
   color: #fff !important;
-}
-
-#donation-form .gform_body .amount div.gfield_radio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-#donation-form .gform_body .amount div.gfield_radio input {
-  display: none;
-}
-
-#donation-form .gform_body .amount div.gchoice label {
-  max-width: 100%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  border: 3px solid #fff;
-}
-
-#donation-form .gform_body .amount input:checked + label {
-  background-color: #fff;
-  color: var(--wp--preset--color--secondary);
-  max-width: 100%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#donation-form .gform_body .amount + .gfield .ginput_container .preinput {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 10px 0;
-  font-size: 1.2rem;
-  float: left;
-  text-align: right;
-  width: 25px;
-  color: var(--wp--preset--color--primary);
-  font-weight: 700;
-  font-family: var(--wp--preset--font-family--roboto);
-}
-
-#donation-form .gform_body .amount + .gfield .ginput_container .otherinput {
-  position: relative;
-  top: 10%;
-  border: 0px;
-  float: right;
-  text-align: left;
-  width: calc(100% - 25px);
-}
-
-#donation-form .gform_body .amount + .gfield .ginput_container .otherinput input {
-  position: relative;
-  width: 55%;
-  top: 10%;
-  border: 0px;
-  float: right;
-  text-align: left;
-  font-size: 1.2rem;
-  color: var(--wp--preset--color--primary);
-  min-width: 100%;
-  max-height: 100%;
-  text-align: center;
-  padding: 0;
-  outline: none;
-  -webkit-appearance: none;
-  margin: 0;
-  -moz-appearance: textfield;
-  margin: -4px 0px;
 }
 /*# sourceMappingURL=style.css.map */
