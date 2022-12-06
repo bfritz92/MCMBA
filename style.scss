@@ -345,11 +345,11 @@ ul.trail-conditions li h4 {
       & ~ label:hover,
       & ~ label:active {
         background-color: var(--wp--preset--color--background);
-        color: #fff;
+        color: var(--wp--preset--color--secondary);
         font-weight: 700;
       }
 
-      label {
+      & ~ label {
         display: flex;
         width: 100%;
         justify-content: center;
