@@ -374,7 +374,8 @@ ul.trail-conditions li h4 {
           display: none;
         }
       }
-
+      input:checked + label {
+      }
       div.gchoice label {
         background-color: #fff;
         max-width: 100%;
@@ -391,54 +392,7 @@ ul.trail-conditions li h4 {
         color: #004b7a;
         border: 3px solid #004b7a;
       }
-      &.one-time,
-      &.monthly {
-        text-align: center;
-        .ginput_container_radio {
-          .gfield_radio {
-            padding: 0;
-            .gchoice {
-              width: 100%;
-              label {
-                min-width: 100%;
-                display: flex;
-                transition: background-color 150ms ease-in-out;
-                color: var(--wp--preset--color--background);
-                font-family: var(--wp--preset--font-family--roboto);
-                font-weight: 700;
-                margin-left: 0px;
-                background-color: transparent;
-                border: 4px solid #fff;
-                &:hover,
-                &:active,
-                &:focus {
-                  color: var(--wp--preset--color--secondary);
-                  background-color: var(--wp--preset--color--background);
-                }
-              }
-              &:last-child {
-                width: 100%;
-                grid-column: 1/-1;
-                label:before,
-                label:after {
-                  content: none;
-                }
-              }
-            }
-          }
-        }
-      }
-      &.monthly {
-        .ginput_container_radio div.gfield_radio div {
-          label:after {
-            content: " /mo";
-            font-size: 0.8em;
-            margin-left: 2px;
-            margin-top: 0.9em;
-            display: flex;
-          }
-        }
-      }
+
       // Other Amount Options
       & + .gfield {
         .ginput_container {
