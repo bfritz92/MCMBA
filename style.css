@@ -402,6 +402,7 @@ ul.trail-conditions li h4 {
 
 #donation-form .gform_body .amount input:checked + label {
   background-color: #fff;
+  color: var(--wp--preset--color--secondary);
 }
 
 #donation-form .gform_body .amount div.gchoice label {
@@ -411,13 +412,13 @@ ul.trail-conditions li h4 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #004b7a;
-  border: 3px solid #004b7a;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border: 3px solid #fff;
 }
 
 #donation-form .gform_body .amount + .gfield .ginput_container .preinput {
