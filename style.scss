@@ -330,6 +330,9 @@ ul.trail-conditions li h4 {
           grid-column: 1/-1;
           input:checked {
             display: flex;
+            width: 100%;
+            height: 60px;
+            transform: translateY(-30px);
             & ~ label {
               display: none;
             }
