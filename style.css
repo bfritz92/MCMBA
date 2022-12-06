@@ -352,8 +352,8 @@ ul.trail-conditions li h4 {
   grid-column: 1/-1;
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child input:checked,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child input:checked {
+#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input,
+#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
