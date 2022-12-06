@@ -346,15 +346,17 @@ ul.trail-conditions li h4 {
       label:active {
         background-color: var(--wp--preset--color--background);
         color: #fff;
-        display: inline-block;
         font-weight: 700;
       }
 
       label {
-        min-width: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
         height: 60px;
-        border: 2px solid #fff;
-        color: #fff;
+        align-items: center;
+        color: blue;
+        border: 2px solid white;
         transition: background-color 150ms ease-in-out;
         background-color: transparent;
       }
