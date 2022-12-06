@@ -330,13 +330,10 @@ ul.trail-conditions li h4 {
           grid-column: 1/-1;
           input:checked {
             display: flex;
+            & ~ label {
+              display: none;
+            }
           }
-          label {
-            display: none;
-          }
-        }
-        input {
-          display: none;
         }
       }
     }
