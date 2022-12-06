@@ -341,9 +341,9 @@ ul.trail-conditions li h4 {
       left: -9999px; //hacky? moves it waaaay offscreen
       z-index: -99; //no really, I don't want to see it
 
-      &:checked + label,
-      label:hover,
-      label:active {
+      &:checked ~ label,
+      & ~ label:hover,
+      & ~ label:active {
         background-color: var(--wp--preset--color--background);
         color: #fff;
         font-weight: 700;

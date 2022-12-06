@@ -364,9 +364,9 @@ ul.trail-conditions li h4 {
   z-index: -99;
 }
 
-#donation-form .gform_body .gfield-choice-input[type="radio"]:checked + label,
-#donation-form .gform_body .gfield-choice-input[type="radio"] label:hover,
-#donation-form .gform_body .gfield-choice-input[type="radio"] label:active {
+#donation-form .gform_body .gfield-choice-input[type="radio"]:checked ~ label,
+#donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:hover,
+#donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:active {
   background-color: var(--wp--preset--color--background);
   color: #fff;
   font-weight: 700;
