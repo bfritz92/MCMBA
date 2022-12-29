@@ -326,20 +326,7 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
-#donation-form .gform_body #field_1_5 .ginput_container .gfield_radio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-#donation-form .gform_body #field_1_5 .ginput_container .gfield_radio input {
-  display: none;
-}
-
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -347,13 +334,11 @@ ul.trail-conditions li h4 {
   grid-gap: 10px;
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child {
   grid-column: 1/-1;
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,13 +348,11 @@ ul.trail-conditions li h4 {
           transform: translateY(-45px);
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
   display: none;
 }
 
-#donation-form .gform_body #field_1_7 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input,
-#donation-form .gform_body #field_1_8 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
   display: none;
 }
 

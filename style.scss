@@ -304,22 +304,7 @@ ul.trail-conditions li h4 {
     display: none; //hide progress bar
   }
   .gform_body {
-    #field_1_3 {
-      //top intro
-    }
-    #field_1_5 {
-      //one-time or monthly
-      .ginput_container .gfield_radio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        input {
-          display: none;
-        }
-      }
-    }
-    #field_1_7,
-    #field_1_8 {
+    #field_1_28 {
       //amount selector
       .ginput_container .gfield_radio {
         display: grid;
