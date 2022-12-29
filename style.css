@@ -417,4 +417,9 @@ ul.trail-conditions li h4 {
   border-radius: 0;
   border: none;
 }
+
+.flip-list-last-modified-header,
+.flip-entry-last-modified {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
