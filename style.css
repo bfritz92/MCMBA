@@ -356,6 +356,18 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
+#donation-form .gform_body #field_1_27 {
+  display: none;
+}
+
+#donation-form .gform_body #field_1_29 .gfield_label {
+  display: none;
+}
+
+#donation-form .gform_body #field_1_29 input {
+  height: 60px;
+}
+
 #donation-form .gform_body .gfield-choice-input[type="radio"] {
   visibility: hidden;
   position: absolute;

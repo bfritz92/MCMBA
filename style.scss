@@ -332,6 +332,17 @@ ul.trail-conditions li h4 {
         }
       }
     }
+    #field_1_27 {
+      display: none;
+    }
+    #field_1_29 {
+      .gfield_label {
+        display: none;
+      }
+      input {
+        height: 60px;
+      }
+    }
     // GENERAL RADIO BUTTONS
     .gfield-choice-input[type="radio"] {
       //remove radio buttons
