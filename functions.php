@@ -246,3 +246,14 @@ function acf_facebook_event_page() {
 	return $facebook_event_page;
 }
 add_shortcode( 'call_facebook_event_page', 'acf_facebook_event_page' );
+
+function hook_iframe_resize() {
+	    ?>
+	        <script>
+	         function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+	        </script>
+	    <?php
+	}
+	add_action('wp_head', 'hook_iframe_resize');
