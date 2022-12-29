@@ -248,12 +248,12 @@ function acf_facebook_event_page() {
 add_shortcode( 'call_facebook_event_page', 'acf_facebook_event_page' );
 
 
-function resize_iframes{
+function resize_iframes(){
 	?>
 	<script>
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-  }
+
 </script>
 <?php 
 }
