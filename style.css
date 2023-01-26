@@ -99,8 +99,8 @@ body > .is-root-container,
 .wp-block-group.alignfull,
 .wp-block-group.has-background,
 .wp-block-cover.alignfull,
-.is-root-container .wp-block[data-align="full"] > .wp-block-group,
-.is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+.is-root-container .wp-block[data-align=full] > .wp-block-group,
+.is-root-container .wp-block[data-align=full] > .wp-block-cover {
   padding-left: var(--wp--custom--spacing--outer);
   padding-right: var(--wp--custom--spacing--outer);
 }
@@ -111,12 +111,9 @@ body > .is-root-container,
 .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background,
 .wp-site-blocks > .wp-block-template-part > .wp-block-cover,
 body > .is-root-container > .wp-block-cover,
-body
-> .is-root-container
-> .wp-block-template-part
-> .wp-block-group.has-background,
+body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
 body > .is-root-container > .wp-block-template-part > .wp-block-cover,
-.is-root-container .wp-block[data-align="full"] {
+.is-root-container .wp-block[data-align=full] {
   margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
   margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
   width: unset;
@@ -124,9 +121,9 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 /* Blocks inside columns don't have negative margins. */
 .wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
-.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align=full],
 .wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
-.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+.is-root-container .wp-block[data-align=full] > *:not(.wp-block-group) .wp-block[data-align=full] {
   margin-left: auto !important;
   margin-right: auto !important;
   width: inherit;
@@ -156,10 +153,7 @@ p.lora {
   z-index: 3;
 }
 
-ul.wp-block-navigation__submenu-container
-li.wp-block-navigation-item.wp-block-navigation-link
-a.wp-block-navigation-item__content
-span.wp-block-navigation-item__label {
+ul.wp-block-navigation__submenu-container li.wp-block-navigation-item.wp-block-navigation-link a.wp-block-navigation-item__content span.wp-block-navigation-item__label {
   font-size: var(--wp--preset--font-size--small) !important;
 }
 
@@ -180,12 +174,10 @@ ul.wp-block-navigation__container li.donate {
 
 @media only screen and (min-width: 767px) {
   .top-nav {
-    -webkit-transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
-            transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
+    transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
     z-index: 2;
   }
 }
-
 /* backgrounds */
 .red-bg {
   background-image: url("/wp-content/uploads/2022/12/Topo-Red.jpg");
@@ -222,8 +214,6 @@ ul.trail-conditions {
 }
 
 ul.trail-conditions li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -235,6 +225,16 @@ ul.trail-conditions li h4 {
   color: #fff;
   margin: 0;
   padding-left: 5px;
+}
+
+/* Trail Page */
+.trail--cover--info {
+  min-width: 100%;
+}
+@media screen and (min-width: 750px) {
+  .trail--cover--info {
+    min-width: 750px;
+  }
 }
 
 /* Event Pages */
@@ -272,16 +272,11 @@ ul.trail-conditions li h4 {
 
 /* child page list */
 .childpages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
   gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-left: 0;
 }
 
@@ -290,13 +285,8 @@ ul.trail-conditions li h4 {
 }
 
 .childpages li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .childpages li a h4 {
@@ -307,7 +297,7 @@ ul.trail-conditions li h4 {
 }
 
 .childpages li a img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
@@ -325,89 +315,60 @@ ul.trail-conditions li h4 {
 #donation-form .gf_progressbar_wrapper {
   display: none;
 }
-
 #donation-form .gform_body #field_1_28 .ginput_container .gfield_radio {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
-
 #donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child {
   grid-column: 1/-1;
 }
-
 #donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 60px;
-  -webkit-transform: translateY(-45px);
-          transform: translateY(-45px);
+  transform: translateY(-45px);
 }
-
 #donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
   display: none;
 }
-
 #donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
   display: none;
 }
-
 #donation-form .gform_body #field_1_27 {
   display: none;
 }
-
 #donation-form .gform_body #field_1_29 .gfield_label {
   display: none;
 }
-
 #donation-form .gform_body #field_1_29 input {
   height: 60px;
 }
-
-#donation-form .gform_body .gfield-choice-input[type="radio"] {
+#donation-form .gform_body .gfield-choice-input[type=radio] {
   visibility: hidden;
   position: absolute;
   left: -9999px;
   z-index: -99;
 }
-
-#donation-form .gform_body .gfield-choice-input[type="radio"]:checked ~ label,
-#donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:hover,
-#donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:active {
+#donation-form .gform_body .gfield-choice-input[type=radio]:checked ~ label, #donation-form .gform_body .gfield-choice-input[type=radio] ~ label:hover, #donation-form .gform_body .gfield-choice-input[type=radio] ~ label:active {
   background-color: var(--wp--preset--color--background);
   color: var(--wp--preset--color--secondary);
   font-weight: 700;
 }
-
-#donation-form .gform_body .gfield-choice-input[type="radio"] ~ label {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#donation-form .gform_body .gfield-choice-input[type=radio] ~ label {
   display: flex;
   min-width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: var(--wp--preset--color--background);
   border: 2px solid white;
-  -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   background-color: transparent;
 }
-
 #donation-form .gform_page_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #donation-form .gform_page_footer input {
   width: 100%;
   height: 60px;
@@ -421,5 +382,4 @@ ul.trail-conditions li h4 {
 .flip-list-last-modified-header,
 .flip-entry-last-modified {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
