@@ -15,7 +15,11 @@ b {
   text-transform: uppercase;
   color: #fff;
 }
-
+#regionstats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #regionstats li {
   padding-bottom: 10px;
 }
