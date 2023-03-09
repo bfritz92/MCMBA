@@ -428,3 +428,23 @@ ul.trail-conditions li h4 {
 .flip-entry-last-modified {
   display: none;
 } /*# sourceMappingURL=style.css.map */
+
+/* STICKY FOOTER */
+html,
+body {
+  height: 100%;
+}
+.wp-site-blocks {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+.wp-site-blocks {
+  padding-bottom: 0;
+}
