@@ -156,7 +156,8 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 p.lora {
   font-family: var(--wp--preset--font-family--lora) !important;
 }
-p {
+p,
+li {
   font-family: "Roboto Condensed", sans-serif;
 }
 /* Menu */
