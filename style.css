@@ -22,136 +22,7 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
  * This is a niche setting that will not be available via Global Styles.
  * https://github.com/WordPress/gutenberg/issues/35934
  */
-/* cyrillic-ext */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJMkqt8ndeYxZ2JTg.woff)
-    format("woff");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJFkqt8ndeYxZ2JTg.woff)
-    format("woff");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJOkqt8ndeYxZ2JTg.woff)
-    format("woff");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJPkqt8ndeYxZ2JTg.woff)
-    format("woff");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqt8ndeYxZ0.woff)
-    format("woff");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCkYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCAYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCgYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCcYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCsYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCoYb9lecyVC4A.woff2)
-    format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYb9lecyU.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@700&display=swap");
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -170,7 +41,7 @@ a {
 a:hover,
 a:focus {
   -webkit-text-decoration-style: dashed;
-  text-decoration-style: dashed;
+          text-decoration-style: dashed;
 }
 
 a:active {
@@ -181,7 +52,7 @@ a:active {
 .wp-block-navigation .wp-block-navigation-item a:focus {
   text-decoration: underline;
   -webkit-text-decoration-style: solid;
-  text-decoration-style: solid;
+          text-decoration-style: solid;
 }
 
 /*
@@ -241,9 +112,9 @@ body > .is-root-container,
 .wp-site-blocks > .wp-block-template-part > .wp-block-cover,
 body > .is-root-container > .wp-block-cover,
 body
-  > .is-root-container
-  > .wp-block-template-part
-  > .wp-block-group.has-background,
+> .is-root-container
+> .wp-block-template-part
+> .wp-block-group.has-background,
 body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 .is-root-container .wp-block[data-align="full"] {
   margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
@@ -253,15 +124,9 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 /* Blocks inside columns don't have negative margins. */
 .wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
-.is-root-container
-  .wp-block-columns
-  .wp-block-column
-  .wp-block[data-align="full"],
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
 .wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
-.is-root-container
-  .wp-block[data-align="full"]
-  > *:not(.wp-block-group)
-  .wp-block[data-align="full"] {
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
   margin-left: auto !important;
   margin-right: auto !important;
   width: inherit;
@@ -285,22 +150,16 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 p.lora {
   font-family: var(--wp--preset--font-family--lora) !important;
 }
-p,
-li {
-  font-family: "Roboto Condensed", sans-serif;
-}
-.wp-block-post-title {
-  font-family: "Roboto Condensed", sans-serif;
-}
+
 /* Menu */
 .top-nav {
   z-index: 3;
 }
 
 ul.wp-block-navigation__submenu-container
-  li.wp-block-navigation-item.wp-block-navigation-link
-  a.wp-block-navigation-item__content
-  span.wp-block-navigation-item__label {
+li.wp-block-navigation-item.wp-block-navigation-link
+a.wp-block-navigation-item__content
+span.wp-block-navigation-item__label {
   font-size: var(--wp--preset--font-size--small) !important;
 }
 
@@ -316,17 +175,17 @@ ul.wp-block-navigation__container li.donate {
 
 .entry-content {
   -webkit-margin-before: 0;
-  margin-block-start: 0;
+          margin-block-start: 0;
 }
 
 @media only screen and (min-width: 767px) {
   .top-nav {
-    transform: translateX(
-      calc(1 * var(--wp--custom--spacing--outer))
-    ) !important;
+    -webkit-transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
+            transform: translateX(calc(1 * var(--wp--custom--spacing--outer))) !important;
     z-index: 2;
   }
 }
+
 /* backgrounds */
 .red-bg {
   background-image: url("/wp-content/uploads/2022/12/Topo-Red.jpg");
@@ -351,9 +210,9 @@ ul.wp-block-navigation__container li.donate {
 /* Stupid default block padding */
 .wp-site-blocks > * {
   -webkit-margin-before: 0;
-  margin-block-start: 0;
+          margin-block-start: 0;
   -webkit-margin-after: 0;
-  margin-block-end: 0;
+          margin-block-end: 0;
 }
 
 /* Trail conditions */
@@ -363,6 +222,8 @@ ul.trail-conditions {
 }
 
 ul.trail-conditions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -380,6 +241,7 @@ ul.trail-conditions li h4 {
 .trail--cover--info {
   min-width: 100%;
 }
+
 @media screen and (min-width: 750px) {
   .trail--cover--info {
     min-width: 750px;
@@ -421,11 +283,16 @@ ul.trail-conditions li h4 {
 
 /* child page list */
 .childpages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   gap: 1rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 0;
 }
 
@@ -434,8 +301,13 @@ ul.trail-conditions li h4 {
 }
 
 .childpages li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .childpages li a h4 {
@@ -446,9 +318,9 @@ ul.trail-conditions li h4 {
 }
 
 .childpages li a img {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: auto;
   width: 100%;
 }
@@ -464,67 +336,56 @@ ul.trail-conditions li h4 {
 #donation-form .gf_progressbar_wrapper {
   display: none;
 }
-#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio {
+
+#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
-#donation-form
-  .gform_body
-  #field_1_28
-  .ginput_container
-  .gfield_radio
-  .gchoice:last-child {
+
+#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child {
   grid-column: 1/-1;
 }
-#donation-form
-  .gform_body
-  #field_1_28
-  .ginput_container
-  .gfield_radio
-  .gchoice:last-child
-  input:checked
-  ~ input {
+
+#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 60px;
-  transform: translateY(-45px);
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
 }
-#donation-form
-  .gform_body
-  #field_1_28
-  .ginput_container
-  .gfield_radio
-  .gchoice:last-child
-  input:checked
-  ~ label {
+
+#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
   display: none;
 }
-#donation-form
-  .gform_body
-  #field_1_28
-  .ginput_container
-  .gfield_radio
-  .gchoice:last-child
-  input:not(:checked)
-  ~ input {
+
+#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
   display: none;
 }
-#donation-form .gform_body #field_1_27 {
+
+#donation-form .gform_body #field_5_27 {
   display: none;
 }
-#donation-form .gform_body #field_1_29 .gfield_label {
+
+#donation-form .gform_body #field_5_29 .gfield_label {
   display: none;
 }
-#donation-form .gform_body #field_1_29 input {
+
+#donation-form .gform_body #field_5_29 input {
   height: 60px;
 }
+
 #donation-form .gform_body .gfield-choice-input[type="radio"] {
   visibility: hidden;
   position: absolute;
   left: -9999px;
   z-index: -99;
 }
+
 #donation-form .gform_body .gfield-choice-input[type="radio"]:checked ~ label,
 #donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:hover,
 #donation-form .gform_body .gfield-choice-input[type="radio"] ~ label:active {
@@ -532,20 +393,32 @@ ul.trail-conditions li h4 {
   color: var(--wp--preset--color--secondary);
   font-weight: 700;
 }
+
 #donation-form .gform_body .gfield-choice-input[type="radio"] ~ label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 60px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--wp--preset--color--background);
   border: 2px solid white;
+  -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   background-color: transparent;
 }
+
 #donation-form .gform_page_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 #donation-form .gform_page_footer input {
   width: 100%;
   height: 60px;
@@ -559,24 +432,5 @@ ul.trail-conditions li h4 {
 .flip-list-last-modified-header,
 .flip-entry-last-modified {
   display: none;
-} /*# sourceMappingURL=style.css.map */
-
-/* STICKY FOOTER */
-html,
-body {
-  height: 100%;
 }
-.wp-site-blocks {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-main {
-  flex: 1 0 auto;
-}
-footer {
-  flex-shrink: 0;
-}
-.wp-site-blocks {
-  padding-bottom: 0;
-}
+/*# sourceMappingURL=style.css.map */
