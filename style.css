@@ -337,7 +337,7 @@ ul.trail-conditions li h4 {
   display: none;
 }
 
-#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -345,11 +345,11 @@ ul.trail-conditions li h4 {
   grid-gap: 10px;
 }
 
-#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child {
   grid-column: 1/-1;
 }
 
-#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,23 +359,23 @@ ul.trail-conditions li h4 {
           transform: translateY(-45px);
 }
 
-#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:checked ~ label {
   display: none;
 }
 
-#donation-form .gform_body #field_5_28 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
+#donation-form .gform_body #field_1_28 .ginput_container .gfield_radio .gchoice:last-child input:not(:checked) ~ input {
   display: none;
 }
 
-#donation-form .gform_body #field_5_27 {
+#donation-form .gform_body #field_1_27 {
   display: none;
 }
 
-#donation-form .gform_body #field_5_29 .gfield_label {
+#donation-form .gform_body #field_1_29 .gfield_label {
   display: none;
 }
 
-#donation-form .gform_body #field_5_29 input {
+#donation-form .gform_body #field_1_29 input {
   height: 60px;
 }
 
